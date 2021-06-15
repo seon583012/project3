@@ -1,69 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
-
-/*** 
-
-====================================================================
-  Loading Transition
-====================================================================
-
- ***/
-#loader-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  background: #f8e9e6;
-  overflow: hidden;
-}
-#preloader_1{
-  position: absolute;
-  left: 50%;
-  margin-left: -25px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#preloader_1 span{
-  display:block;
-  bottom:0px;
-  width: 6px;
-  height: 5px;
-  background:#e15b47; 
-  position:absolute;
-  animation: preloader_1 1.5s  infinite ease-in-out;
-}
- 
-#preloader_1 span:nth-child(2){
-left:11px;
-animation-delay: .2s;
- 
-}
-#preloader_1 span:nth-child(3){
-left:22px;
-animation-delay: .4s;
-}
-#preloader_1 span:nth-child(4){
-left:33px;
-animation-delay: .6s;
-}
-#preloader_1 span:nth-child(5){
-left:44px;
-animation-delay: .8s;
-}
-@keyframes preloader_1 {
-    0% {height:5px;transform:translateY(0px);background:#e15b47;}
-    25% {height:30px;transform:translateY(15px);background:#e15b47;}
-    50% {height:5px;transform:translateY(0px);background:#e15b47;}
-    100% {height:5px;transform:translateY(0px);background:#e15b47;}
-}
-
-
-
-
-
-
 * { margin: 0; padding: 0; border: none; }
 ul { list-style: none; }
 a { text-decoration: none; font-family: 'Nanum Gothic', sans-serif; color: #000; color: rgba(0,0,0,0.7); font-size: 1.5rem; font-weight: 700; word-break: keep-all; }
@@ -670,9 +606,9 @@ a.close{
 .sub_bob_btnset a:hover li:after { background: url(../img/sub_bob_arrow_next_h.png); } 
 
 
-.sub_bob_cont_title { width: 100%;  height: 50px; position: relative; line-height: 50px; margin: 100px 0 50px; }
-.sub_bob_cont_title h2 {position: absolute; width: 50%; left: 0; right: 0; margin: 0 auto; background: #fff; }
-.sub_bob_cont_title span { width: 100%; height: 1px; background: #d70b18;  position: absolute; left: 0; right: 0; margin: 25px auto; }
+.sus_bob_cont_title { width: 100%;  height: 50px; position: relative; line-height: 50px; margin: 100px 0 50px; }
+.sus_bob_cont_title h2 {position: absolute; width: 50%; left: 0; right: 0; margin: 0 auto; background: #fff; }
+.sus_bob_cont_title span { width: 100%; height: 1px; background: #d70b18;  position: absolute; left: 0; right: 0; margin: 25px auto; }
 
 .sub_bob_cont_set { margin-bottom: 150px; }
 .sub_bob_cont_set .title_set { width: 36%; float: left; margin-top: 80px; }
@@ -943,29 +879,6 @@ a.close{
     /*sub_event 끝*/
     /*sub_event 끝*/
     
-    /*sub_bob 시작*/
-    /*sub_bob 시작*/
-    /*sub_bob 시작*/
-    
-    .sub_bob_m_listset { display: none; }
-    .sub_bob_btnset { width: 80%; }
-    
-    #sub_bob_contents .space_on { display: block; }
-    #sub_bob_contents .sub_bob_introset p { width: 80%; }
-    .sub_bob_cont_set .title_set { width: 40%; }
-    .sub_bob_cont_set .img_set { width: 60%; position: relative; height: 550px; }
-    .sub_bob_cont_set .img_area { height: 366px; }
-    .sub_bob_cont_set .img_set .img_large { left: revert; right: 280px; width: 330px; }
-    .sub_bob_cont_set .img_set .img_small { width: 240px; }
-    .img_set>p { position: absolute; width: 610px; right: 0; display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical; }
-    .img_set .btn { position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 0; }
-    /*sub_bob 끝*/
-    /*sub_bob 끝*/
-    /*sub_bob 끝*/
-    
-    
 }
 /*1189px 끝*/
 
@@ -979,38 +892,6 @@ a.close{
     .mainimg_contents h1 { font-size: 3.5rem; line-height: 40px; margin: 15px 0; }
     .mainimg_contents>p { font-size: 1.4rem; line-height: 24px; width: 80%; margin: 8px 0; }
     .read_btn { margin-top: 30px; }
-    
-}
-
-@media (max-width:990px) {
-    
-    /*sub_bob 시작*/
-    /*sub_bob 시작*/
-    /*sub_bob 시작*/
-    
-    .sub_bob_listset { width: 93%; margin: 0 auto; }
-    .sub_bob_listset .sub_bob_list { font-size: 1.8rem; height: 65px; line-height: 65px; }
-    
-    .sub_bob_partset a { margin: 30px calc((100% - 495px )/6); }
-    .sub_bob_partset .hidden { display: block; position: revert; visibility: hidden; }
-    
-    .sub_bob_btnset { width: 336px; }
-    .sub_bob_btnset a { margin: 15px 0; }
-    
-    .sub_bob_cont_title h2 { width: 70%; }
-    
-    .sub_bob_cont_set { height: 950px; margin-bottom: 100px; }
-    .sub_bob_cont_set .title_set { float:  revert; margin: 0 auto 40px; text-align: center; width: 100%; }
-    .sub_bob_cont_set .img_set { float: revert; margin: 0 auto; width: 80%; }
-    .sub_bob_cont_set .img_set .img_small { display: none; }
-    .sub_bob_cont_set .img_area { position: revert; text-align: center; width: 100%; height: 507px; }
-    .sub_bob_cont_set .img_set .img_large { position: revert; width: revert; }
-    .img_set>p { position: revert; -webkit-line-clamp: 3; margin: 50px auto; text-align: center; width: 60%;}
-    .img_set .btn { position: revert; margin: 0 auto; }
-    
-    /*sub_bob 끝*/
-    /*sub_bob 끝*/
-    /*sub_bob 끝*/
 }
 
 @media (max-width:880px) { 
@@ -1064,33 +945,6 @@ a.close{
     /*sub_event 끝*/
     /*sub_event 끝*/
     /*sub_event 끝*/
-    
-    /*sub_bob 시작*/
-    /*sub_bob 시작*/
-    /*sub_bob 시작*/
-    
-    #sub_bob_mainimg { height: 0; padding-top: calc(918 / 768 * 100%); }
-    #sub_bob_mainimg h1 { font-size: 18rem; line-height: 140px; padding-top: 0; position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 20%; }
-    #sub_bob_mainimg .bob_logo { width: 140px; height: 140px; bottom: -70px; }
-    #sub_bob_mainimg .bob_logo img { width: 100%; }
-    
-    #sub_bob_contents h2 { font-size: 2.8rem; }
-    
-    .sub_bob_listset { width: 60%; }
-    .sub_bob_listset .sub_bob_list { display: none; }
-    
-    .sub_bob_listset .sub_bob_list.list_on { display: block; width: 100%; margin: 0; font-size: 2.2rem; }
-    .sub_bob_partset { margin: 30px auto; }
-    
-    .sub_bob_btnset { width: 265px; }
-    .sub_bob_btnset a { width: 265px; height: 60px; line-height: 60px; font-size: 1.6rem; }
-    
-    .sub_bob_m_listset {display: block; width: 230px; margin: 0 auto; text-align: center; margin-top: 60px; }
-    .sub_bob_m_listset .sub_bob_list { display: block; width: 230px; height: 40px; line-height: 40px; margin: 20px 0; border: solid 2px #fff; border-bottom: solid 2px #d70b18; font-size: 1.6rem; transition: all 0.5s; }
-    /*sub_bob 끝*/
-    /*sub_bob 끝*/
-    /*sub_bob 끝*/
-    
 }
 
 @media (max-width:725px) {
@@ -1104,9 +958,6 @@ a.close{
     .popular_list:nth-child(1) { background-size: 25%; background-position: 95% 2%; }
     .popular_list:nth-child(2) { background-size: 25%; background-position: 95% 2%; }
     .popular_list:nth-child(3) { background-size: 25%; background-position: 95% 3%; }
-    
-    /*sub_bob 시작*/
-    #sub_bob_contents .sub_bob_introset p { font-size: 1.5rem; width: 100%; }
 }
 
 @media (max-width:640px) {
@@ -1161,26 +1012,6 @@ a.close{
     
     .sub_event_partnerset ul li img { height: 18px }
     /**/
-    
-    
-    /*sub_bob 시작*/
-    /*sub_bob 시작*/
-    /*sub_bob 시작*/
-    #sub_bob_mainimg h1 { font-size: 16rem; line-height: 120px; }
-    
-    .sub_bob_partset { width: 440px; }
-    .sub_bob_partset a { width: 170px; margin: 30px 25px; }
-    .sub_bob_partset .hidden { display: none; }
-    
-    #sub_bob_contents h2 { font-size: 2.5rem; width: 75%; }
-    .sub_bob_introset h2 {  margin: 0 auto; line-height: 150%; }
-    
-    .sub_bob_cont_set { height: 800px; }
-    .sub_bob_cont_set .img_area { height: 407px; }
-    .sub_bob_cont_set .img_set .img_large { width: 380px;}
-    /*sub_bob 끝*/
-    /*sub_bob 끝*/
-    /*sub_bob 끝*/
 }
 
 @media (max-width:570px) {
@@ -1271,18 +1102,6 @@ a.close{
     .sub_event_announceset .circle { width: 70px; height: 70px; }
     #sub_event_contents .sub_event_announceset .circle p { font-size: 1.2rem; line-height: 20px; padding-top: 16px; }
     /**/
-    
-    /*sub_bob 시작*/
-    #sub_bob_mainimg h1 { font-size: 13rem; line-height: 100px; }
-    #sub_bob_mainimg .bob_logo { width: 120px; height: 120px; bottom: -60px; }
-    #sub_bob_contents { padding-top: 150px; }
-    
-    .cols_space_on { display: block; }
-    .sub_bob_cont_title span { display: none; }
-    .sub_bob_cont_title { height: 100px; }
-    #sub_bob_contents h2 { line-height: 150%;  }
-    .sub_bob_cont_set .title_set h3 { font-size: 2.3rem;}
-    .sub_bob_cont_set .title_set p { font-size: 1.4rem; }
 }
 
 @media (max-width:510px) {
